@@ -15,7 +15,14 @@ We explored automated personality analysis for 3 different datasets.
 
 [MyPersonality Myers-Briggs type indicator](https://www.kaggle.com/datasets/haisamrafid/mypersonality)
 
-Twitter Myers-Briggs type indicator: for the queries to get this data from Twitter please check our paper.
+Twitter Myers-Briggs type indicator: <pre lang="shell">lang:en -has:media -is:retweet -
+has:links -is:reply -"’s mbti"
+-"’s personality"</pre>
+<pre lang="shell">’ˆ.*((my.*personality|me being|my
+mbti|am\s)|([iI][’\s](am|m\s|
+got|ve|have|went|used)))+(\s
+|.\w+.){0,4}#*%s+.*$’ %
+personality_type</pre>
 
 ## Method
 We have tried 2 different methods to solve this automated personality analysis task:
