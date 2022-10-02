@@ -29,50 +29,78 @@ todo
 ## Results
 todo
 
+MyPersonality
 <table>
     <col>
     <col>
-    <colgroup span="2"></colgroup>
+    <col>
     <col>
     <tr>
-        <th rowspan=2>Name</th>
-        <th rowspan=2>Command</th>
-        <th colspan=2 scope="colgroup">Overall</th>
-        <th rowspan=2>Comments</th>
+        <th rowspan=1>MyPersonality</th>
+        <th rowspan=1>E/I</th>
+        <th rowspan=1>S/N</th>
+        <th rowspan=1>T/F</th>
+        <th rowspan=1>J/P</th>
     </tr>
     <tr>
-        <td>Acc<!-- -->@<!-- -->0.25IoU</td>
-        <td>Acc<!-- -->@<!-- -->0.5IoU</td>
+        <td>Random guessing</td>
+        <td>76.96</td>
+        <td>86.20</td>
+        <td>54.11</td>
+        <td>60.41</td>
     </tr>
     <tr>
-        <td>ScanRefer (Baseline)</td>
-        <td><pre lang="shell">python scripts/train.py 
-        --use_color --lr 1e-3 --batch_size 14</pre></td>
-        <td>37.05</td>
-        <td>23.93</td>
-        <td>xyz + color + height</td>
+        <td>[Mehta et al.](https://github.com/yashsmehta/personality-prediction) variable training</td>
+        <td>78.30</td>
+        <td>86.40</td>
+        <td>74.40</td>
+        <td>64.40</td>
     </tr>
     <tr>
-        <td>ScanRefer with pretrained VoteNet (optimized Baseline)</td>
-        <td><pre lang="shell">python scripts/train.py 
-        --use_color --use_chunking 
-        --use_pretrained "pretrained_VoteNet" 
-        --lr 1e-3 --batch_size 14</pre></td>
-        <td>37.11</td>
-        <td>25.21</td>
-        <td>xyz + color + height</td>
+        <td>Ours 4 epochs training Bert 512 tokens</td>
+        <td>82.68</td>
+        <td>89.51</td>
+        <td>83.53</td>
+        <td>77.65</td>
     </tr>
-    <tr>
-        <td>Ours (pretrained 3DETR-m + GRU + vTransformer) </td>
-        <td><pre lang="shell">python scripts/train.py 
-        --use_color --use_chunking 
-        --detection_module 3detr 
-        --match_module transformer
-        --use_pretrained "pretrained_3DETR"
-        --no_detection </pre></td>
-        <td>37.08</td>
-        <td>26.56</td>
-        <td>xyz + color + height</td>
-    </tr>
+</table>
 
+Essays
+<table>
+    <col>
+    <col>
+    <col>
+    <col>
+    <tr>
+        <th rowspan=1>Essays</th>
+        <th rowspan=1>EXT</th>
+        <th rowspan=1>NEU</th>
+        <th rowspan=1>AGR</th>
+        <th rowspan=1>CON</th>
+        <th rowspan=1>OPN</th>
+    </tr>
+    <tr>
+        <td>Random guessing</td>
+        <td>51.68</td>
+        <td>50.02</td>
+        <td>53.06</td>
+        <td>50.83</td>
+        <td>51.52</td>
+    </tr>
+    <tr>
+        <td>[Mehta et al.](https://github.com/yashsmehta/personality-prediction) 7 epochs training</td>
+        <td>54.56</td>
+        <td>55.78</td>
+        <td>56.10</td>
+        <td>56.79</td>
+        <td>60.03</td>
+    </tr>
+    <tr>
+        <td>Ours 5 epochs training Bert 512 tokens</td>
+        <td>55.56</td>
+        <td>54.85</td>
+        <td>58.26</td>
+        <td>55.86</td>
+        <td>63.57</td>
+    </tr>
 </table>
