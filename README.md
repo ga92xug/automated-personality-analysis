@@ -27,7 +27,6 @@ During classification we tried several language encoders (Bert, Longformer, Dist
 todo
 
 ## Results
-todo
 
 MyPersonality
 <table>
@@ -50,7 +49,7 @@ MyPersonality
         <td>60.41</td>
     </tr>
     <tr>
-        <td>[Mehta et al.](https://github.com/yashsmehta/personality-prediction) variable training</td>
+        <td>Mehta et al. variable training</td>
         <td>78.30</td>
         <td>86.40</td>
         <td>74.40</td>
@@ -88,7 +87,7 @@ Essays
         <td>51.52</td>
     </tr>
     <tr>
-        <td>[Mehta et al.](https://github.com/yashsmehta/personality-prediction) 7 epochs training</td>
+        <td>Mehta et al. 7 epochs training</td>
         <td>54.56</td>
         <td>55.78</td>
         <td>56.10</td>
