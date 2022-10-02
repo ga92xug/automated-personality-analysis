@@ -4,22 +4,30 @@
 Automated personality analysis is the task of predicting the personality of a person from text or a video without the need for an individual to do a questionnaire.
 
 For additional details, please see our paper:  
-"[Name of your paper](https://github.com/flo-stilz/3D-Visual-Grounding-with-Transformers/blob/lang-det/paper%20%26%20figures/final_submission_3D_visual_grounding_with_transformers.pdf)"  
+"[Name of your paper](https://github.com/flo-stilz/3D-Visual-Grounding-with-Transformers/blob/lang-det/paper%20%26%20figures/final_submission_3D_visual_grounding_with_transformers.pdf)" (add paper)
 by [Stefan Frisch](https://github.com/ga92xug) and [Hakan Akyürek](https://github.com/add_your_github/)
 from the [Technical University of Munich](https://www.tum.de/en/). 
 
 ## Setup + Dataset
 We explored automated personality analysis for 3 different datasets.
-[Essays Big Five personality factors] (https://github.com/ga92xug/personality-prediction/tree/master/data/essays)
-[MyPersonality Myers-Briggs type indicator] (https://www.kaggle.com/datasets/haisamrafid/mypersonality)
+
+[Essays Big Five personality factors](https://github.com/ga92xug/personality-prediction/tree/master/data/essays)
+
+[MyPersonality Myers-Briggs type indicator](https://www.kaggle.com/datasets/haisamrafid/mypersonality)
+
 Twitter Myers-Briggs type indicator: for the queries to get this data from Twitter please check our paper.
 
 ## Method
+We have tried 2 different methods to solve this automated personality analysis task:
 
+### Classification
+During classification we tried several language encoders (Bert, Longformer, Distillbert) with the output of these and a MLP on top we predicted the personality type of an individual from text/tweets. 
 
+### Siamese
+todo
 
 ## Results
-here we have to add some results
+todo
 
 <table>
     <col>
