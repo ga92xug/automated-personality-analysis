@@ -1,4 +1,4 @@
-# Automated Personality Analysis
+# Automated Personality Assessment
 
 ## Introduction
 Automated personality analysis is the task of predicting the personality of a person from text or a video without the need for a questionnaire.
