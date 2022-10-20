@@ -4,7 +4,7 @@
 Automated personality analysis is the task of predicting the personality of a person from text or a video without the need for a questionnaire.
 
 For additional details, please see our paper:  
-"[Name of your paper](https://github.com/flo-stilz/3D-Visual-Grounding-with-Transformers/blob/lang-det/paper%20%26%20figures/final_submission_3D_visual_grounding_with_transformers.pdf)" (add paper)
+"[Automated personality assessment](https://github.com/ga92xug/automated-personality-assessment/blob/main/paper/Automated-Personality-Assessment.pdf)"
 by [Stefan Frisch](https://github.com/ga92xug) and [Hakan Akyürek](https://github.com/add_your_github/)
 from the [Technical University of Munich](https://www.tum.de/en/). 
 
