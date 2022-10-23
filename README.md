@@ -31,7 +31,7 @@ We have tried 2 different methods to solve this automated personality analysis t
 During classification we tried several language encoders (Bert, Longformer, Distillbert) with the output of these and a MLP on top we predicted the personality type of an individual from text/tweets. 
 
 ### Siamese
-todo
+We also experimented with S-Bert to do classification. For this task we had to generate document pairs. Concerning this generation we experimented with different techniques.
 
 ## Results
 
